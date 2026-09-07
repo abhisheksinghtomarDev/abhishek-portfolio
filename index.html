@@ -3,101 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abhishek Singh Tomar — .NET Backend Developer portfolio" />
-  <title>The Daily Developer - Abhishek Singh Tomar Portfolio</title>
+  <meta name="description" content="Abhishek Singh Tomar — .NET Backend Developer portfolio presented as an interactive newspaper." />
+  <title>The Daily Developer — Abhishek Singh Tomar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Libre+Franklin:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="masthead">
-    <div class="masthead-top">
-      <span>Portfolio Edition</span>
-      <span id="today">Today</span>
-      <span>India</span>
-    </div>
-    <h1>The Daily Developer</h1>
-    <div class="rule"></div>
-    <p class="strapline">Backend engineering, APIs, systems and dependable software.</p>
-  </header>
-
-  <main class="newspaper">
-    <section class="lead-story">
-      <p class="kicker">Profile</p>
-      <h2>Abhishek Singh Tomar</h2>
-      <p class="deck">.NET Backend Developer building reliable APIs and enterprise applications.</p>
-      <div class="byline">Software Engineer · C# · ASP.NET Core · SQL Server</div>
-      <p class="dropcap">I’m a backend-focused software engineer with hands-on experience building and maintaining applications in the Microsoft .NET ecosystem. I work across API development, data access, business logic, debugging and production-oriented engineering.</p>
-      <p>My toolkit includes .NET Core, C#, ASP.NET Core, REST APIs, Entity Framework, LINQ, SQL Server, Web Services, WPF and related backend technologies.</p>
-    </section>
-
-    <aside class="sidebar box">
-      <p class="kicker">At a glance</p>
-      <dl>
-        <div><dt>Primary focus</dt><dd>Backend engineering</dd></div>
-        <div><dt>Stack</dt><dd>.NET / C#</dd></div>
-        <div><dt>Database</dt><dd>SQL Server</dd></div>
-        <div><dt>Frontend exposure</dt><dd>Angular</dd></div>
-        <div><dt>Education</dt><dd>B.Tech CSE, GLA University</dd></div>
-      </dl>
-      <a class="button" href="https://in.linkedin.com/in/abhishek-singhtomar" target="_blank" rel="noreferrer">LinkedIn</a>
-    </aside>
-
-    <section class="section full-width">
-      <div class="section-heading"><span>Experience & Expertise</span></div>
-      <div class="columns three">
-        <article>
-          <h3>Backend Development</h3>
-          <p>Designing and implementing server-side features, REST APIs, business logic, validation and maintainable application services using C# and ASP.NET Core.</p>
-        </article>
-        <article>
-          <h3>Data & Persistence</h3>
-          <p>Working with SQL Server, Entity Framework and LINQ for data access, querying, persistence and application-level data workflows.</p>
-        </article>
-        <article>
-          <h3>Enterprise Engineering</h3>
-          <p>Experience with frameworks and technologies including ABP, S4 API, Web Services and WPF in production-oriented software environments.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section wide-story">
-      <div class="section-heading"><span>Selected Work</span></div>
-      <article class="feature-card">
-        <p class="kicker">Automation</p>
-        <h3>Global Weather Tracker</h3>
-        <p>A small automation project built around scheduled weather tracking using GitHub Actions. It demonstrates practical automation, scheduled execution and API-oriented development.</p>
-        <div class="tags"><span>Automation</span><span>GitHub Actions</span><span>APIs</span></div>
-      </article>
-      <article class="feature-card">
-        <p class="kicker">Professional Work</p>
-        <h3>.NET Backend Applications</h3>
-        <p>Built and maintained backend functionality across enterprise software using C#, ASP.NET Core, Entity Framework, LINQ and SQL Server, with an emphasis on stability, readability and maintainability.</p>
-        <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>EF</span><span>SQL Server</span></div>
-      </article>
-    </section>
-
-    <aside class="section quote-column">
-      <div class="section-heading"><span>Toolkit</span></div>
-      <ul class="skill-list">
-        <li>.NET Core</li><li>C#</li><li>ASP.NET Core</li><li>REST APIs</li><li>Entity Framework</li><li>LINQ</li><li>SQL Server</li><li>ABP Framework</li><li>Web Services</li><li>WPF</li><li>Angular</li><li>Git / GitHub</li>
-      </ul>
-    </aside>
-
-    <section class="section full-width contact">
-      <div class="section-heading"><span>Contact</span></div>
-      <h2>Open to engineering conversations and opportunities.</h2>
-      <p>Connect with me on LinkedIn for professional discussions, collaboration and backend engineering opportunities.</p>
-      <a class="text-link" href="https://in.linkedin.com/in/abhishek-singhtomar" target="_blank" rel="noreferrer">linkedin.com/in/abhishek-singhtomar →</a>
-    </section>
-  </main>
-
-  <footer>
-    <div>Abhishek Singh Tomar</div>
-    <div>Recovered / reconstructed portfolio source</div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <main class="stage" aria-label="Interactive newspaper portfolio">
+    <div class="desk-label"><span>Executive Portfolio Edition</span><div class="reader-tools" aria-label="Reader settings"><button id="themeToggle" class="tool-toggle" type="button" aria-label="Switch newspaper theme" aria-pressed="false"><span class="tool-icon">◐</span><span class="tool-text">Dark</span></button><button id="soundToggle" class="tool-toggle" type="button" aria-label="Toggle page sound" aria-pressed="true"><span class="tool-icon">♪</span><span class="tool-text">Sound on</span></button><span>Issue 01 · 2026</span></div></div>
+    <section class="paper-shell" id="paperShell"><div class="paper-stack-shadow"></div><div class="newspaper-book" id="newspaperBook">
+      <article class="paper-page active" data-page="1" aria-label="Front page"><div class="paper-noise"></div><header class="masthead"><div class="edition-row"><span>Portfolio Edition</span><span>Monday · September 2026</span><span>India</span></div><h1>The Daily Developer</h1><div class="double-rule"></div><div class="submast"><span>Backend Engineering</span><span>APIs · Systems · Data</span><span>Abhishek Singh Tomar</span></div></header>
+        <div class="front-grid"><section class="lead-story"><div class="eyebrow">Lead Story</div><h2>Backend Engineer Builds for Reliability, Clarity and Scale</h2><p class="standfirst">Abhishek Singh Tomar is a .NET backend developer focused on dependable APIs, clean business logic and production-ready software across the Microsoft ecosystem.</p><div class="byline">By The Engineering Desk · Special Portfolio Report</div><div class="article-columns two-col"><p class="dropcap">A backend-focused software engineer with around three years of professional experience, Abhishek works across REST API development, application services, data access, debugging and enterprise-grade feature delivery.</p><p>His core stack includes C#, .NET Core, ASP.NET Core, Entity Framework, LINQ and SQL Server, supported by practical exposure to ABP Framework, Web Services, WPF, Angular and integration-focused development.</p><p>Rather than treating backend development as isolated endpoint work, his approach connects API contracts, business rules, persistence, validation and operational behavior into maintainable application flows.</p><p>Current career focus includes strengthening data structures and algorithms, system design and Azure fundamentals while preparing for higher-impact backend engineering roles.</p></div><div class="continued">Continued on Page 2 →</div></section>
+          <aside class="front-side"><div class="stat-card"><div class="stat-kicker">Experience</div><div class="stat-number">3+</div><div class="stat-copy">Years in software engineering and backend development</div></div><div class="mini-story"><div class="eyebrow">Core Stack</div><h3>.NET at the Centre</h3><p>C# · ASP.NET Core · REST APIs · Entity Framework · LINQ · SQL Server</p></div><div class="mini-story"><div class="eyebrow">Engineering Scope</div><h3>From Request to Database</h3><p>Business logic, data access, API contracts, debugging, integration and maintainable backend services.</p></div><div class="mini-story dark-box"><div class="eyebrow inverse">Today’s Brief</div><p><strong>Specialization:</strong> Backend Engineering</p><p><strong>Education:</strong> B.Tech CSE, GLA University</p><p><strong>Direction:</strong> High-impact .NET roles</p></div></aside></div>
+        <section class="ticker-strip"><span>REST API DESIGN</span><span>ASP.NET CORE</span><span>ENTITY FRAMEWORK</span><span>SQL SERVER</span><span>LINQ</span><span>ABP FRAMEWORK</span><span>ANGULAR</span></section><section class="bottom-grid three-stories"><article><div class="eyebrow">Analysis</div><h3>Why Backend Quality Matters</h3><p>Stable software is often defined by what users never see: predictable APIs, clean data access, robust validation and readable application logic.</p></article><article><div class="eyebrow">Career Desk</div><h3>Building Toward Larger Systems</h3><p>System design, Azure and stronger algorithmic foundations are the next layer in an already backend-heavy engineering profile.</p></article><article><div class="eyebrow">Automation</div><h3>Global Weather Tracker</h3><p>A scheduled automation project using GitHub Actions demonstrates API usage, recurring workflows and practical developer tooling.</p></article></section><footer class="folio"><span>The Daily Developer</span><span>Page 1</span></footer><button class="page-corner next-corner" aria-label="Turn to page 2"><span>Turn page</span></button></article>
+      <article class="paper-page" data-page="2" aria-label="Career and experience page"><div class="paper-noise"></div><header class="inside-header"><span>THE DAILY DEVELOPER</span><span>CAREER & EXPERIENCE</span><span>PAGE 2</span></header><div class="inside-rule"></div><section class="career-lead"><div class="eyebrow">Career Report</div><h2>Engineering Work Centres on Backend Services, Enterprise Logic and Data</h2><p class="standfirst compact">Experience spans server-side development, API implementation, persistence workflows, issue resolution and software maintenance in production-oriented environments.</p></section><div class="career-grid"><section class="career-main"><div class="article-columns three-col body-small"><p class="dropcap">Across professional software work, the central responsibility has been backend engineering in the .NET ecosystem. This includes implementing server-side features, translating requirements into application logic and maintaining code that remains understandable after delivery.</p><p>REST APIs form a major part of the toolkit, with attention to request/response contracts, service-layer organization, validation, data retrieval and database interaction. ASP.NET Core is used as the primary web framework for application development.</p><p>Entity Framework and LINQ support persistence and querying, while SQL Server provides the relational data layer. The work frequently involves navigating existing codebases, tracing defects and making targeted changes without destabilizing surrounding functionality.</p><p>Exposure to ABP Framework contributes experience with structured enterprise application patterns, while Web Services and integration-focused work provide familiarity with system-to-system communication.</p><p>WPF experience adds desktop application exposure, and Angular experience provides context for how frontend clients consume backend APIs and depend on consistent data contracts.</p><p>Current development priorities include deeper system design knowledge, stronger DSA problem solving and Azure cloud fundamentals to move from implementation-focused backend work toward broader engineering ownership.</p></div><div class="pull-quote">“Good backend engineering is not only about making an endpoint work. It is about making the system easier to trust, change and extend.”</div><div class="achievement-grid"><article><span class="num">01</span><h3>API Delivery</h3><p>Designing and implementing backend endpoints and service flows in ASP.NET Core.</p></article><article><span class="num">02</span><h3>Data Access</h3><p>Using Entity Framework, LINQ and SQL Server for application persistence and querying.</p></article><article><span class="num">03</span><h3>Maintenance</h3><p>Debugging, tracing defects and improving existing application behavior safely.</p></article><article><span class="num">04</span><h3>Enterprise Exposure</h3><p>Working with ABP, Web Services, WPF and structured application environments.</p></article></div></section><aside class="career-sidebar"><div class="classified-box"><div class="classified-title">Professional Keywords</div><p>.NET Core</p><p>C#</p><p>ASP.NET Core</p><p>REST APIs</p><p>Entity Framework</p><p>LINQ</p><p>SQL Server</p><p>ABP Framework</p><p>Web Services</p><p>WPF</p><p>Angular</p><p>Git / GitHub</p></div><div class="mini-story bordered"><div class="eyebrow">Education</div><h3>B.Tech — Computer Science & Engineering</h3><p>GLA University, Mathura · Graduated 2023</p></div><div class="mini-story bordered"><div class="eyebrow">Professional Direction</div><h3>Backend → Systems</h3><p>Building toward roles with deeper architecture, cloud and system ownership.</p></div></aside></div><footer class="folio"><span>Career & Experience</span><span>Page 2</span></footer><button class="page-corner prev-corner" aria-label="Turn back to page 1"><span>Back</span></button><button class="page-corner next-corner" aria-label="Turn to page 3"><span>Turn page</span></button></article>
+      <article class="paper-page" data-page="3" aria-label="Technology and projects page"><div class="paper-noise"></div><header class="inside-header"><span>THE DAILY DEVELOPER</span><span>TECHNOLOGY & PROJECTS</span><span>PAGE 3</span></header><div class="inside-rule"></div><div class="tech-grid"><section class="tech-main"><div class="eyebrow">Technology Desk</div><h2>The Stack Behind the Stories</h2><div class="stack-ledger"><div><span class="ledger-label">Backend</span><strong>C# · .NET Core · ASP.NET Core</strong></div><div><span class="ledger-label">APIs</span><strong>REST · Web Services · Integration</strong></div><div><span class="ledger-label">Data</span><strong>Entity Framework · LINQ · SQL Server</strong></div><div><span class="ledger-label">Enterprise</span><strong>ABP Framework · WPF</strong></div><div><span class="ledger-label">Frontend Context</span><strong>Angular</strong></div><div><span class="ledger-label">Tooling</span><strong>Git · GitHub · GitHub Actions</strong></div></div><div class="feature-split"><article class="project-feature"><div class="eyebrow">Project Spotlight</div><h3>Global Weather Tracker</h3><p class="project-deck">A practical automation project built around scheduled weather tracking and GitHub Actions.</p><div class="article-columns two-col body-small"><p>The project demonstrates a compact but useful engineering pattern: fetch external information on a schedule, process it reliably and automate recurring execution without manual intervention.</p><p>It reinforces API consumption, task automation, source control workflows and the use of GitHub Actions for scheduled developer operations.</p></div><div class="tags"><span>Automation</span><span>APIs</span><span>GitHub Actions</span><span>Scheduled Workflows</span></div></article><aside class="code-column"><div class="terminal-card"><div class="terminal-head">ENGINEERING NOTEBOOK</div><pre><code>public async Task&lt;Result&gt; BuildAsync()
+{
+    var data = await api.FetchAsync();
+    var model = mapper.Map(data);
+    await repository.SaveAsync(model);
+    return Result.Success();
+}</code></pre></div><div class="mini-story bordered"><div class="eyebrow">Design Principle</div><h3>Readable Before Clever</h3><p>Code should make intent obvious, isolate responsibilities and reduce the cost of future change.</p></div></aside></div></section></div><section class="learning-row"><article><span class="section-number">A</span><div><div class="eyebrow">Currently Strengthening</div><h3>Data Structures & Algorithms</h3><p>Improving problem-solving depth for product-company interviews and stronger engineering fundamentals.</p></div></article><article><span class="section-number">B</span><div><div class="eyebrow">Architecture</div><h3>System Design</h3><p>Studying scalable services, caching, queues, data design, trade-offs and production architecture.</p></div></article><article><span class="section-number">C</span><div><div class="eyebrow">Cloud</div><h3>Microsoft Azure</h3><p>Building cloud familiarity around deployment, services, observability and modern backend infrastructure.</p></div></article></section><footer class="folio"><span>Technology & Projects</span><span>Page 3</span></footer><button class="page-corner prev-corner" aria-label="Turn back to page 2"><span>Back</span></button><button class="page-corner next-corner" aria-label="Turn to page 4"><span>Turn page</span></button></article>
+      <article class="paper-page" data-page="4" aria-label="About and contact page"><div class="paper-noise"></div><header class="inside-header"><span>THE DAILY DEVELOPER</span><span>PROFILE & CONTACT</span><span>PAGE 4</span></header><div class="inside-rule"></div><section class="final-hero"><div class="eyebrow">Closing Edition</div><h2>Built for the Backend. Growing Toward the Whole System.</h2><p class="standfirst">A .NET engineer combining production experience with a deliberate move toward stronger architecture, cloud and problem-solving depth.</p></section><div class="final-grid"><section class="about-story"><div class="article-columns two-col"><p class="dropcap">Abhishek’s engineering profile is grounded in backend development and practical software delivery. His day-to-day strengths sit around APIs, data access, business logic and maintaining applications that have to work reliably beyond a demo environment.</p><p>He brings a working understanding of how frontend applications interact with backend contracts, how persistence shapes service behavior and how enterprise frameworks impose structure on larger codebases.</p><p>The next phase of his growth is intentionally broader: system design, Azure and stronger algorithmic thinking. The goal is to progress from feature implementation into backend ownership and eventually larger-scale engineering responsibility.</p><p>For recruiters and engineering teams, the profile is best suited to .NET backend, API, platform-adjacent and enterprise application roles where reliability, maintainability and steady technical growth matter.</p></div><div class="contact-banner"><div><div class="eyebrow inverse">Contact Desk</div><h3>Let’s Talk Engineering</h3><p>Open to conversations around backend engineering, .NET opportunities and software development roles.</p></div><a href="https://in.linkedin.com/in/abhishek-singhtomar" target="_blank" rel="noreferrer">LinkedIn →</a></div></section><aside class="final-sidebar"><div class="profile-card"><div class="profile-monogram">AST</div><h3>Abhishek Singh Tomar</h3><p>.NET Backend Developer</p><div class="profile-rule"></div><small>B.Tech CSE · GLA University · 2023</small></div><div class="editorial-box"><div class="eyebrow">Editorial Summary</div><p><strong>Best fit:</strong> .NET Backend / API Engineering</p><p><strong>Core:</strong> C#, ASP.NET Core, EF, LINQ, SQL Server</p><p><strong>Growth:</strong> System Design, Azure, DSA</p></div></aside></div><section class="closing-strip"><span>END OF EDITION</span><span>THANK YOU FOR READING</span><span>ABHISHEK SINGH TOMAR</span></section><footer class="folio"><span>Profile & Contact</span><span>Page 4</span></footer><button class="page-corner prev-corner" aria-label="Turn back to page 3"><span>Back</span></button></article>
+    </div></section><nav class="reader-controls" aria-label="Newspaper navigation"><button id="prevBtn">← Previous</button><div class="page-dots" id="pageDots" aria-label="Page indicators"></div><button id="nextBtn">Next page →</button></nav><div class="reader-hint">Drag from a page corner, click the folded corner, use arrow keys, or swipe.</div></main><script src="script.js"></script>
+</body></html>
